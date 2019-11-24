@@ -21,15 +21,15 @@ public class TaTest {
     @Test
     public void checkNcAvailable() {
         ReaderXLX readFile = new ReaderXLX();
-        readFile.param = readFile.madeArrActions(WaysConstant.WAY_TO_DATA_FILE);
-        ClickerChrome clickerChrome = new ClickerChrome();
+        readFile.value = readFile.madeArrActions(WaysConstant.WAY_TO_DATA_FILE);
+        readFile.printArrays(readFile.action, readFile.value);
 
-//        readFile.printArgsArr(readFile.param); //печать массива
+        ClickerChrome clickerChrome = new ClickerChrome();
         clickerChrome.setBrowser();
-        clickerChrome.openURL(readFile.param[0]);
-        clickerChrome.clickByXPath(readFile.param[1]);
-        clickerChrome.clickByXPath(readFile.param[2]," \\| ",2);
-        clickerChrome.clickByXPath(readFile.param[4]);
+        clickerChrome.openURL(readFile.value[0]);
+        clickerChrome.clickByXPath(readFile.value[1]);
+        clickerChrome.clickByXPath(readFile.value[2]," \\| ",2);
+        clickerChrome.clickByXPath(readFile.value[4]);
         clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
         clickerChrome.closeChromeBrowser();
     }

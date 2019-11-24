@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87256f21-c998-4b21-b823-2bc30e601f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/ClickerChrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/ReaderFileData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/ReaderXLX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/WaysConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/ReaderJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TATestTask2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tatesttask2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Google/TaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/ClickerChrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/ClickerChrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/ReaderFileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/ReaderFileData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/ReaderXLX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/ReaderXLX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/Google/TaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Google/TaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/ClickerChrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/ClickerChrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/ReaderFileData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/ReaderFileData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/ReaderXLX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/resources/ReaderXLX.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TaTest.checkNcAvailable">
     <configuration name="TaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tatesttask2" />
       <extension name="coverage">
@@ -88,53 +87,6 @@
       <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
       <option name="METHOD_NAME" value="checkNcAvailable" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="tatesttask2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="tatesttask2" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -33,8 +33,7 @@ public class ClickerChrome {
     //      разбивает строку запроса на запрос и кликает кнопку поиска
     public void clickByXPath(String xPath, String parsParam, int parts) {
         String[] tmpStr = madeRequestText(xPath, parsParam, parts);
-        if (checkExistEl(tmpStr[0]) == true)
-        {
+        if (checkExistEl(tmpStr[0]) == true) {
             //      забивает запрос в поисковую строку
             WebElement element = (new WebDriverWait(browser, 3))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(tmpStr[0])));
@@ -42,9 +41,7 @@ public class ClickerChrome {
             WebElement elementButton = (new WebDriverWait(browser, 3))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(tmpStr[0])));
             elementButton.submit();
-        }
-        else
-        {
+        } else {
             System.out.println("Не могу выполнить задиние!!! Прверь метод" + getClass().getName());
         }
     }
@@ -66,7 +63,7 @@ public class ClickerChrome {
         }
     }
 
-    boolean checkExistEl(String xPath){
+    boolean checkExistEl(String xPath) {
         boolean present;
         try {
             browser.findElement(By.xpath(xPath));
