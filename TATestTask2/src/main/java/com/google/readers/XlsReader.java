@@ -1,4 +1,4 @@
-package resources;
+package com.google.readers;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -7,20 +7,20 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
-public class ReaderXLX extends ReaderFileData {
+public class XlsReader extends AbstractReader {
+
     public String[] value;
     public String[] action;
-    public int iter;
+    public int iterator;
 
     public String[] madeArrActions(String way) {
-        File dataFile = null;
-        HSSFWorkbook myExcelBook = null;
+        File dataFile = new File(way);
 
-//        WayConstant.WAY_TO_DATA_FILE
-        try {
-            dataFile = new File(way);
-            myExcelBook = new HSSFWorkbook(new FileInputStream(dataFile));
+        try(FileInputStream file = new FileInputStream(dataFile)) {
+            HSSFWorkbook myExcelBook = new HSSFWorkbook(file);
             HSSFSheet myExcelSheet = myExcelBook.getSheetAt(0);
 
             HSSFCell celValue = null;
@@ -32,13 +32,13 @@ public class ReaderXLX extends ReaderFileData {
                 rowValue = myExcelSheet.getRow(i + 1);
                 celValue = rowValue.getCell(1);
                 if (celValue.toString().isEmpty()) {
-                    iter = i;
+                    iterator = i;
                     break;
                 }
             }
 
-            value = new String[iter];
-            action = new String[iter];
+            value = new String[iterator];
+            action = new String[iterator];
 
             for (int i = 0; i < value.length; i++) {
                 rowValue = myExcelSheet.getRow(i + 1);
@@ -50,14 +50,10 @@ public class ReaderXLX extends ReaderFileData {
                 action[i] = celValue.toString();
             }
             printArrays(value, action);
-        } catch (Exception e) {
-            System.out.println(e.getStackTrace());
-        } finally {
-            try {
-                myExcelBook.close();
-            } catch (Exception e) {
-                System.out.println(e.getStackTrace());
-            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return value;
     }

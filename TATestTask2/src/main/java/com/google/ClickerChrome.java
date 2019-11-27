@@ -1,4 +1,4 @@
-package resources;
+package com.google;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class ClickerChrome {
+
     ChromeDriver browser;
 
     //      кликает на первое вхождение
@@ -33,7 +34,7 @@ public class ClickerChrome {
     //      разбивает строку запроса на запрос и кликает кнопку поиска
     public void clickByXPath(String xPath, String parsParam, int parts) {
         String[] tmpStr = madeRequestText(xPath, parsParam, parts);
-        if (checkExistEl(tmpStr[0]) == true) {
+        if (checkElementVisible(tmpStr[0]) == true) {
             //      забивает запрос в поисковую строку
             WebElement element = (new WebDriverWait(browser, 3))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(tmpStr[0])));
@@ -63,10 +64,10 @@ public class ClickerChrome {
         }
     }
 
-    boolean checkExistEl(String xPath) {
+    boolean checkElementVisible(String xPath) {
         boolean present;
         try {
-            browser.findElement(By.xpath(xPath));
+            browser.findElement(By.xpath(xPath)).isDisplayed();
             present = true;
         } catch (NoSuchElementException e) {
             present = false;

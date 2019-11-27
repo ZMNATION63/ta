@@ -1,16 +1,19 @@
-package resources;
+package com.google.readers;
 
 import java.util.Formatter;
 
-public abstract class ReaderFileData {
+public abstract class AbstractReader {
     public String[] param;
     public String[] action;
     public int iter;
     public String way;
 
-    public String[] madeArrActions(String way) {
-        return null;
-    }
+    /**
+     *
+     * @param way
+     * @return
+     */
+    public abstract String[] madeArrActions(String way);
 
     public void printArgsArr(String[] param) {
         for (String k : param) {
@@ -28,8 +31,6 @@ public abstract class ReaderFileData {
             val = value[i];
 
             System.out.printf("%-10s", action[i], value[i]);
-//            System.out.printf("%-10s%n", action[i], value[i]);
-
         }
     }
 

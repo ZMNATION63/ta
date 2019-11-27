@@ -1,4 +1,4 @@
-package resources;
+package com.google;
 
 public final class WaysConstant {
     public static final String WAY_TO_CHROME_DRIVER = "C:\\Users\\user\\Projects\\TATest\\Server\\chromedriver.exe";
