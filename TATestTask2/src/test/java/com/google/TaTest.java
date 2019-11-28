@@ -6,11 +6,15 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.junit.Test;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -33,25 +37,44 @@ import static com.google.WaysConstant.WAY_TO_DATA_FILE;
 public class TaTest {
 
     @Test
-    public void RunUiTest_UsingExcelTest_TestPassedSuccessfully() throws IOException, InvalidFormatException {
-        /*FileInputStream fileInputStream = new FileInputStream(WaysConstant.WAY_TO_DATA_FILE);
-        Workbook workbook = WorkbookFactory.create(fileInputStream);//classLoader.getResourceAsStream(fileInputStream);
+    public void RunUiTest_UsingExcelTest_TestPassedSuccessfully() throws IOException, InvalidFormatException, ParseException {
 
-        Sheet sheet = workbook.getSheetAt(0);
+//       "C:\\Users\\miza1218\\Projects\\tatest\\TATestTask2\\target\\classes\\tabasetrue.json"
+        JSONParser parser = new JSONParser();
+        JSONObject obj;
+        try {
 
-        DataFormatter dataFormatter = new DataFormatter();
+            obj = (JSONObject) parser.parse(new FileReader("C:\\Users\\miza1218\\Projects\\tatest\\TATestTask2\\target\\classes\\tabasetrue.json"));
 
-        sheet.forEach(row -> {
-            String name = dataFormatter.formatCellValue(row.getCell(0));
+            //System.out.println("<br>" + obj);
 
-            String interaction = dataFormatter.formatCellValue(row.getCell(1));
+            JSONObject jsonObject = (JSONObject) obj;
 
-        });
+            JSONArray from_excel = (JSONArray) jsonObject.get("from_excel");
+//            System.out.println(from_excel.get(0));
+            // вариант построчного вывода 2
+//            Iterator iterator = from_excel.iterator();
+//            while (iterator.hasNext()) {
+//                System.out.println("<br>"+iterator.next());
+//            }
+//            // вариант поименного вывода 3
+            for (int i = 0; i < from_excel.size(); i++) {
 
-        workbook.close();*/
-        XlsReader readFile = new XlsReader();
-        readFile.arrActions(WaysConstant.WAY_TO_DATA_FILE);
+                JSONObject jsonObjectRow = (JSONObject) from_excel.get(i);
+                String num = (String) jsonObjectRow.get("Action");
+                String solution = (String) jsonObjectRow.get("Params");
+                System.out.println("<br>num= " + num + "; solution= " + solution);
+            }
+        } catch (Exception e) {
+            System.out.println("Ошибка: " + e);
+        }
+    }
+}
 
+
+//        XlsReader readFile = new XlsReader();
+//        readFile.arrActions(WaysConstant.WAY_TO_DATA_FILE);
+//        readFile.printActionsArray(readFile.getActions());
 //        readFile.printArrays(readFile.action, readFile.value);
 //        ClickerChrome clickerChrome = new ClickerChrome();
 //        clickerChrome.setBrowser();
@@ -61,5 +84,7 @@ public class TaTest {
 //        clickerChrome.clickByXPath(readFile.value[4]);
 //        clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
 //        clickerChrome.closeChromeBrowser();
-    }
-}
+
+
+
+

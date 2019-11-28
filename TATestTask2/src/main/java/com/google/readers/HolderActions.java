@@ -3,6 +3,8 @@ package com.google.readers;
 public class HolderActions {
     public String action;
     public String xPath;
+    public String Description;
+
 
     public HolderActions(String action, String xPath) {
         this.action = action;

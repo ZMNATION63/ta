@@ -1,35 +1,42 @@
 ﻿[
 	{
+	"holderactions":
+	{
 		"Action": "openUrl",
 		"Params": "https://google.com",
 		"Description": "Open Browser"
+	
 	},
 	{
+
 		"Action": "Click",
 		"Params": "//*[@id=",
 		"Description": "Click Element"
+	
 	},
 	{
+
 		"Action": "setValue",
 		"Params": "//*[@id=",
 		"Description": "Set Text Value"
+
 	},
 	{
 		"Action": "Click",
 		"Params": "//*[@id=",
 		"Description": "Click Search Button"
+
 	},
 	{
 		"Action": "Click",
 		"Params": "//*[@id=",
 		"Description": "Click First Result"
+	
 	},
 	{
 		"Action": "Screenshot",
 		"Params": " ",
 		"Description": "Take screenshot"
-	},
-	{
-		"Action": ""
 	}
+	
 ]
