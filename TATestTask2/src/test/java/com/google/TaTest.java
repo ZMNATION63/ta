@@ -1,7 +1,20 @@
 package com.google;
 
 import com.google.readers.XlsReader;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.junit.Test;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import static com.google.WaysConstant.WAY_TO_DATA_FILE;
 
 //TODO Показать запуск из командной строки мейвеном тесты
 //TODO Сделать второй тест с описание в json, реализовать парент класс для разных типов входных файлов и в зависимости от типа файла подкладывать реализацию чтения нужного формата.
@@ -20,18 +33,33 @@ import org.junit.Test;
 public class TaTest {
 
     @Test
-    public void RunUiTest_UsingExcelTest_TestPassedSuccessfully() {
-        XlsReader readFile = new XlsReader();
-        readFile.value = readFile.madeArrActions(WaysConstant.WAY_TO_DATA_FILE);
-        readFile.printArrays(readFile.action, readFile.value);
+    public void RunUiTest_UsingExcelTest_TestPassedSuccessfully() throws IOException, InvalidFormatException {
+        /*FileInputStream fileInputStream = new FileInputStream(WaysConstant.WAY_TO_DATA_FILE);
+        Workbook workbook = WorkbookFactory.create(fileInputStream);//classLoader.getResourceAsStream(fileInputStream);
 
-        ClickerChrome clickerChrome = new ClickerChrome();
-        clickerChrome.setBrowser();
-        clickerChrome.openURL(readFile.value[0]);
-        clickerChrome.clickByXPath(readFile.value[1]);
-        clickerChrome.clickByXPath(readFile.value[2]," \\| ",2);
-        clickerChrome.clickByXPath(readFile.value[4]);
-        clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
-        clickerChrome.closeChromeBrowser();
+        Sheet sheet = workbook.getSheetAt(0);
+
+        DataFormatter dataFormatter = new DataFormatter();
+
+        sheet.forEach(row -> {
+            String name = dataFormatter.formatCellValue(row.getCell(0));
+
+            String interaction = dataFormatter.formatCellValue(row.getCell(1));
+
+        });
+
+        workbook.close();*/
+        XlsReader readFile = new XlsReader();
+        readFile.arrActions(WaysConstant.WAY_TO_DATA_FILE);
+
+//        readFile.printArrays(readFile.action, readFile.value);
+//        ClickerChrome clickerChrome = new ClickerChrome();
+//        clickerChrome.setBrowser();
+//        clickerChrome.openURL(readFile.value[0]);
+//        clickerChrome.clickByXPath(readFile.value[1]);
+//        clickerChrome.clickByXPath(readFile.value[2]," \\| ",2);
+//        clickerChrome.clickByXPath(readFile.value[4]);
+//        clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
+//        clickerChrome.closeChromeBrowser();
     }
 }

@@ -1,5 +1,6 @@
 package com.google.readers;
 
+import java.util.Arrays;
 import java.util.Formatter;
 
 public abstract class AbstractReader {
@@ -10,10 +11,10 @@ public abstract class AbstractReader {
 
     /**
      *
-     * @param way
+//     * @param way
      * @return
      */
-    public abstract String[] madeArrActions(String way);
+//    public abstract String[] madeArrActions(String way);
 
     public void printArgsArr(String[] param) {
         for (String k : param) {
@@ -30,8 +31,10 @@ public abstract class AbstractReader {
             act = action[i];
             val = value[i];
 
-            System.out.printf("%-10s", action[i], value[i]);
         }
+//            System.out.printf("%-10s", action[i], value[i]);
+        System.out.println(Arrays.toString(value));
+        System.out.println(Arrays.toString(action));
     }
 
 }
