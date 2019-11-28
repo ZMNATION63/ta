@@ -15,9 +15,8 @@ import java.util.*;
 
 public class XlsReader extends AbstractReader {
     protected static List<HolderActions> actions = new LinkedList<>();
-    public List<String> value = new ArrayList<>();
-    public List<String> action = new ArrayList<>();
     private File dataFile;
+    public String way;
 
     public File madeDataFile(String way) {
         File dataFile = new File(this.getClass().getResource(way).getFile());
@@ -50,12 +49,13 @@ public class XlsReader extends AbstractReader {
         }
     }
 
-    public void arrActions(String way) {
-        /*
-File file = new File(classLoader.getResource("images/file.png").getFile());*/
+    public List<HolderActions> arrActions(String way) {
+//        HolderActions holderActions = new HolderActions();
+        List<HolderActions> holderActions1 = null;
+
         ClassLoader classLoader = getClass().getClassLoader();
         dataFile = new File(classLoader.getResource(way).getFile());
-        HolderActions holderActions = new HolderActions();
+//        HolderActions holderActions = new HolderActions();
 
         try (FileInputStream file = new FileInputStream(dataFile)) {
             Workbook workbook = WorkbookFactory.create(file);
@@ -70,7 +70,7 @@ File file = new File(classLoader.getResource("images/file.png").getFile());*/
             //row - строка
             //cell - ячейка в строке
             while (rowIterator.hasNext()) {
-                Row row = rowIterator.next();
+                 Row row = rowIterator.next();
 
                 // Now let's iterate over the columns of the current row
                 Iterator<Cell> cellIterator = row.cellIterator();
@@ -90,6 +90,8 @@ File file = new File(classLoader.getResource("images/file.png").getFile());*/
                     i++;
                 }
             }
+            printArrayT(actions);
+//            holderActions1.addAll(actions);
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } catch (InvalidFormatException ex) {
@@ -97,6 +99,7 @@ File file = new File(classLoader.getResource("images/file.png").getFile());*/
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+        return actions;
     }
 }
 

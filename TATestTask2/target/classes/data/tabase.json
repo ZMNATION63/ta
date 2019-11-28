@@ -1,0 +1,29 @@
+{
+"from_excel":[
+	{
+		"Action": "openUrl",
+		"Params": "https://google.com",
+		"Description": "Open Browser"
+	},
+	{
+		"Action": "Click",
+		"Params": "//input[@class=\"gLFyf gsfi\"]",
+		"Description": "Click Element"
+	},
+	{
+		"Action": "setValue",
+		"Params": "//input[@class=\"gLFyf gsfi\"] | Netcracker",
+		"Description": "Set Text Value"
+	},
+	{
+		"Action": "Click",
+		"Params": "//*[@class=\"LC20lb\"]",
+		"Description": "Click First Result"
+	},
+	{
+		"Action": "Screenshot",
+		"Params": " ",
+		"Description": "Take screenshot"
+	}
+]
+}
