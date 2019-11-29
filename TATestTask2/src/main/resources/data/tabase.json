@@ -11,13 +11,18 @@
 		"Description": "Click Element"
 	},
 	{
+		"Action": "Screenshot",
+		"Params": " ",
+		"Description": "Take screenshot"
+	},
+	{
 		"Action": "setValue",
 		"Params": "//input[@class=\"gLFyf gsfi\"] | Netcracker",
 		"Description": "Set Text Value"
 	},
 	{
 		"Action": "Click",
-		"Params": "//*[@class=\"LC20lb\"]",
+		"Params": "//*[@class=\"S3Uucc\"]",
 		"Description": "Click First Result"
 	},
 	{

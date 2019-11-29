@@ -6,6 +6,11 @@
 		"Description": "Open Browser"
 	},
 	{
+		"Action": "Screenshot",
+		"Params": " ",
+		"Description": "Take screenshot"
+	},
+	{
 		"Action": "Click",
 		"Params": "//input[@class=\"gLFyf gsfi\"]",
 		"Description": "Click Element"
@@ -17,7 +22,7 @@
 	},
 	{
 		"Action": "Click",
-		"Params": "//*[@class=\"LC20lb\"]",
+		"Params": "//*[@class=\"S3Uucc\"]",
 		"Description": "Click First Result"
 	},
 	{

@@ -37,38 +37,15 @@ public class TaTest {
 //        jsonReader.arrActions(WaysConstant.WAY_TO_DATA_JSON);
         ClickChrome clickerChrome = new ClickChrome();
         clickerChrome.setBrowser();
-        List<HolderActions> holderActions = xlsReader.arrActions(WaysConstant.WAY_TO_DATA_XLS); //jsonReader.arrActions(WaysConstant.WAY_TO_DATA_JSON);
-//        ScriptManager scriptManager = new ScriptManager();
-//        for (int i = 0; i < holderActions.size(); i++) {
-//            scriptManager.scriptSwitch(holderActions.get(i).action,holderActions.get(i).xPath, clickerChrome);
-//        }
+        List<HolderActions> holderActions = xlsReader.getActions(); //xlsReader.arrActions(WaysConstant.WAY_TO_DATA_XLS); //jsonReader.arrActions(WaysConstant.WAY_TO_DATA_JSON);
+        ScriptManager scriptManager = new ScriptManager();
+        for (int i = 0; i < holderActions.size(); i++) {
+            scriptManager.scriptSwitch(holderActions.get(i).action,holderActions.get(i).xPath, clickerChrome);
+        }
         clickerChrome.closeChromeBrowser();
-//        clickerChrome.openURL(holderActions.get(0).xPath);
-//        clickerChrome.clickByXPath(holderActions.get(1).xPath);
-        /*
-        File file = new File("d:\\MY_LOLFOLDER");
-        file.mkdir();
-        */
-
-//        clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
-//        clickerChrome.clickByXPath(readFile.value[2]," \\| ",2);
-//        clickerChrome.clickByXPath(readFile.value[4]);
-//        clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
-//        clickerChrome.closeChromeBrowser();
     }
 }
 
-
-//        readFile.printActionsArray(readFile.getActions());
-//        readFile.printArrays(readFile.action, readFile.value);
-//        ClickerChrome clickerChrome = new ClickerChrome();
-//        clickerChrome.setBrowser();
-//        clickerChrome.openURL(readFile.value[0]);
-//        clickerChrome.clickByXPath(readFile.value[1]);
-//        clickerChrome.clickByXPath(readFile.value[2]," \\| ",2);
-//        clickerChrome.clickByXPath(readFile.value[4]);
-//        clickerChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
-//        clickerChrome.closeChromeBrowser();
 
 
 

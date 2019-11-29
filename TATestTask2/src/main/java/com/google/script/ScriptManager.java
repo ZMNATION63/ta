@@ -9,7 +9,6 @@ import java.util.Date;
 public class ScriptManager {
 
     public void scriptSwitch(String action, String xPath, ClickChrome clickChrome) {
-//        ClickChrome clickerChrome = new ClickChrome();
         /*
          * 1. openUrl
          * 2. click
@@ -21,7 +20,7 @@ public class ScriptManager {
                 clickChrome.setBrowser();
                 clickChrome.openURL(xPath);
                 break;
-            case "click":
+            case "Click":
                 clickChrome.clickByXPath(xPath);
                 break;
             case "setValue":
@@ -32,5 +31,4 @@ public class ScriptManager {
                 break;
         }
     }
-
 }

@@ -51,7 +51,7 @@ public class XlsReader extends AbstractReader {
 
     public List<HolderActions> arrActions(String way) {
 //        HolderActions holderActions = new HolderActions();
-        List<HolderActions> holderActions1 = null;
+//        List<HolderActions> holderActions1 = null;
 
         ClassLoader classLoader = getClass().getClassLoader();
         dataFile = new File(classLoader.getResource(way).getFile());
@@ -90,7 +90,7 @@ public class XlsReader extends AbstractReader {
                     i++;
                 }
             }
-            printArrayT(actions);
+            //printArrayT(actions);
 //            holderActions1.addAll(actions);
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
