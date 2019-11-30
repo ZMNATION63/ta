@@ -6,13 +6,17 @@ import java.util.List;
 public abstract class AbstractReader {
     public int iter;
     public String way;
-    List<HolderActions> actions;
+    List<Action> actions;
     private File dataFile;
 
-//    public abstract void arrActions(String way);
+    public abstract List<Action> arrActions(String way);
 
-    public void printArrayT(List<HolderActions> param) {
-        for (HolderActions k : param) {
+    public List<Action> getActions() {
+        return actions;
+    }
+
+    public void printArrayT(List<Action> param) {
+        for (Action k : param) {
             System.out.println(k);
         }
     }

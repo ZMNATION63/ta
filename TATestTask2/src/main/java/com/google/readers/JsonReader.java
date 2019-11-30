@@ -6,21 +6,18 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
 import java.util.List;
 
 public class JsonReader extends AbstractReader {
-    protected static List<HolderActions> actions = new ArrayList<>();
+//    protected static List<HolderActions> actions = new ArrayList<>();
     private File dataFile;
     public String way;
 
-    public static List<HolderActions> getActions() {
-        return actions;
-    }
-//    @Override
-    public List<HolderActions> arrActions(String way) {
-        HolderActions holderActions = new HolderActions();
-        List<HolderActions> holderActions1 = null;
+
+    @Override
+    public List<Action> arrActions(String way) {
+        Action holderAction = new Action();
+//        List<HolderActions> holderActions1 = null;
         JSONParser parser = new JSONParser();
         JSONObject obj;
         try {
@@ -33,9 +30,10 @@ public class JsonReader extends AbstractReader {
                 JSONObject jsonObjectRow = (JSONObject) from_excel.get(i);
                 String action = (String) jsonObjectRow.get("Action");
                 String xPath = (String) jsonObjectRow.get("Params");
+                String descr = (String)jsonObjectRow.get("Description");
                 if (action.isEmpty() != true) {
-                    holderActions = new HolderActions(action, xPath);
-                    actions.add(holderActions);
+                    holderAction = new Action(action, xPath, descr);
+                    actions.add(holderAction);
                 }
             }
 //            holderActions1 = new ArrayList<>(actions);

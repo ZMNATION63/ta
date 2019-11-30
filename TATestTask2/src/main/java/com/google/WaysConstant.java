@@ -5,6 +5,6 @@ public final class WaysConstant {
     public static final String WAY_TO_DATA_XLS = "data/dataFile.xls";
     public static final String WAY_TO_DATA_JSON = "data/tabase.json";
     public static final String TYPE_BROWSER_CHROME = "webdriver.chrome.driver";
-    public static final String WAY_TO_SCREENSHOT = "C:\\Users\\miza1218\\Projects\\tatest\\TATestTask2\\src\\main\\resources\\screenshot";
+    public static final String WAY_TO_SCREENSHOT = "target/screenshots";
     public static final int TIME_OUT_IN_SEOND = 3;
 }

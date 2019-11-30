@@ -1,9 +1,5 @@
 package com.google.readers;
 
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 
@@ -14,7 +10,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class XlsReader extends AbstractReader {
-    protected static List<HolderActions> actions = new LinkedList<>();
+//    protected static List<HolderActions> actions = new LinkedList<>();
     private File dataFile;
     public String way;
 
@@ -27,15 +23,15 @@ public class XlsReader extends AbstractReader {
         return dataFile;
     }
 
-    public List<HolderActions> getActions() {
+    public List<Action> getActions() {
         return actions;
     }
 
-    public void setActions(List<HolderActions> actions) {
+    public void setActions(List<Action> actions) {
         this.actions = actions;
     }
 
-    public void setActionsAsEliments(HolderActions action) {
+    public void setActionsAsEliments(Action action) {
         this.actions.add(action);
     }
 
@@ -43,13 +39,13 @@ public class XlsReader extends AbstractReader {
         this.dataFile = dataFile;
     }
 
-    public void printActionsArray(List<HolderActions> actions) {
-        for (HolderActions a : actions) {
+    public void printActionsArray(List<Action> actions) {
+        for (Action a : actions) {
             System.out.println(a.toString());
         }
     }
 
-    public List<HolderActions> arrActions(String way) {
+    public List<Action> arrActions(String way) {
 //        HolderActions holderActions = new HolderActions();
 //        List<HolderActions> holderActions1 = null;
 
@@ -84,7 +80,7 @@ public class XlsReader extends AbstractReader {
                     }
                     if (i == 1) {
                         xPath = dataFormatter.formatCellValue(cell);
-                        HolderActions actionFromXls = new HolderActions(action, xPath);
+                        Action actionFromXls = new Action(action, xPath, "");
                         actions.add(actionFromXls);
                     }
                     i++;

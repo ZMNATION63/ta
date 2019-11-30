@@ -1,10 +1,6 @@
 package com.google.script;
 
 import com.google.WaysConstant;
-import com.google.readers.HolderActions;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class ScriptManager {
 

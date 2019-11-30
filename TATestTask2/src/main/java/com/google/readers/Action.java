@@ -1,18 +1,19 @@
 package com.google.readers;
 
 //Будет выполнять действия считанные из файлов
-public class HolderActions {
+public class Action {
     public String action;
     public String xPath;
-    public String Description;
+    public String  description;
 
 
-    public HolderActions(String action, String xPath) {
+    public Action(String action, String xPath, String description) {
         this.action = action;
         this.xPath = xPath;
+        this.description = description;
     }
 
-    public HolderActions() {
+    public Action() {
     }
 
     @Override
@@ -20,8 +21,11 @@ public class HolderActions {
         return "HolderActions{" +
                 "action='" + action + '\'' +
                 ", xPath='" + xPath + '\'' +
+                ", Desc='" + description + '\'' +
                 '}';
     }
+
+
 
     public String getAction() {
         return action;

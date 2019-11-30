@@ -6,14 +6,14 @@
 		"Description": "Open Browser"
 	},
 	{
-		"Action": "Screenshot",
-		"Params": " ",
-		"Description": "Take screenshot"
-	},
-	{
 		"Action": "Click",
 		"Params": "//input[@class=\"gLFyf gsfi\"]",
 		"Description": "Click Element"
+	},
+	{
+		"Action": "Screenshot",
+		"Params": " ",
+		"Description": "Take screenshot"
 	},
 	{
 		"Action": "setValue",

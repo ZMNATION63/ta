@@ -4,15 +4,21 @@
     <list default="true" id="87256f21-c998-4b21-b823-2bc30e601f6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/WaysConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/WaysConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/AbstractReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/AbstractReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/HolderActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/JsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/XlsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/XlsReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/script/ClickChrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/script/ClickChrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/script/ScriptManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/script/ScriptManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/dataFile.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/dataFile.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/tabase.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/tabase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshot/screen.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/google/WaysConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/WaysConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/HolderActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/HolderActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/JsonReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/JsonReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/XlsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/XlsReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/script/ClickChrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/script/ClickChrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/script/ScriptManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/script/ScriptManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/dataFile.xls" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/dataFile.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/tabase.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/tabase.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/Google/TaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Google/TaTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully (1)">
+  <component name="RunManager" selected="JUnit.TaTest.testFileCreation">
     <configuration name="All in TATestTask2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TATestTask2" />
       <option name="PACKAGE_NAME" value="" />
@@ -142,10 +148,10 @@
       </method>
     </configuration>
     <configuration name="TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tatesttask2" />
+      <module name="TATestTask2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.google.readers.*" />
+          <option name="PATTERN" value="com.google.script.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,17 +163,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaTest.testFileCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TATestTask2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.google.script.*" />
+          <option name="PATTERN" value="com.google.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.google" />
       <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
-      <option name="METHOD_NAME" value="RunUiTest_UsingExcelTest_TestPassedSuccessfully" />
+      <option name="METHOD_NAME" value="testFileCreation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully (1)" />
+        <item itemvalue="JUnit.TaTest.testFileCreation" />
         <item itemvalue="JUnit.TaTest (1)" />
+        <item itemvalue="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully (1)" />
         <item itemvalue="JUnit.All in TATestTask2" />
         <item itemvalue="JUnit.TaTest" />
-        <item itemvalue="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully" />
       </list>
     </recent_temporary>
   </component>

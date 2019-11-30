@@ -1,7 +1,6 @@
 package com.google.script;
 
 import com.google.WaysConstant;
-import com.google.readers.HolderActions;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +18,11 @@ public class ClickChrome extends ScriptManager {
 
     //      кликает на первое вхождение
     //открывает браузер - тест пройден
+
+    /**
+     *
+     */
+
     public void setBrowser() {
         System.setProperty(WaysConstant.TYPE_BROWSER_CHROME, WaysConstant.WAY_TO_CHROME_DRIVER);
         this.browser = new ChromeDriver();
