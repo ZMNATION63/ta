@@ -10,7 +10,11 @@ import java.io.IOException;
 import java.util.*;
 
 public class XlsReader extends AbstractReader {
+<<<<<<< HEAD
 //    protected static List<Action> actions = new LinkedList<>();
+=======
+//    protected static List<HolderActions> actions = new LinkedList<>();
+>>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
     private File dataFile;
     public String way;
 
@@ -27,8 +31,32 @@ public class XlsReader extends AbstractReader {
         return actions;
     }
 
+<<<<<<< HEAD
     @Override
     public void arrActions(String way) {
+=======
+    public void setActions(List<Action> actions) {
+        this.actions = actions;
+    }
+
+    public void setActionsAsEliments(Action action) {
+        this.actions.add(action);
+    }
+
+    public void setDataFile(File dataFile) {
+        this.dataFile = dataFile;
+    }
+
+    public void printActionsArray(List<Action> actions) {
+        for (Action a : actions) {
+            System.out.println(a.toString());
+        }
+    }
+
+    public List<Action> arrActions(String way) {
+//        HolderActions holderActions = new HolderActions();
+//        List<HolderActions> holderActions1 = null;
+>>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
 
         ClassLoader classLoader = getClass().getClassLoader();
         dataFile = new File(classLoader.getResource(way).getFile());
@@ -60,8 +88,13 @@ public class XlsReader extends AbstractReader {
                     }
                     if (i == 1) {
                         xPath = dataFormatter.formatCellValue(cell);
+<<<<<<< HEAD
 //                        Action actionFromXls = new Action(action, xPath);
                         actions.add(new Action(action, xPath));
+=======
+                        Action actionFromXls = new Action(action, xPath, "");
+                        actions.add(actionFromXls);
+>>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
                     }
                     i++;
                 }

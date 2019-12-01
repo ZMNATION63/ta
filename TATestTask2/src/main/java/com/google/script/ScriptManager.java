@@ -1,11 +1,14 @@
 package com.google.script;
 
 import com.google.WaysConstant;
+<<<<<<< HEAD
 import com.google.readers.Action;
 import com.google.readers.JsonReader;
 import com.google.readers.XlsReader;
 
 import java.util.List;
+=======
+>>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
 
 public class ScriptManager {
 

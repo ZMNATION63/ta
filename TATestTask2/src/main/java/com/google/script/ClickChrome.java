@@ -26,6 +26,11 @@ public class ClickChrome extends ScriptManager {
 
     //      кликает на первое вхождение
     //открывает браузер - тест пройден
+
+    /**
+     *
+     */
+
     public void setBrowser() {
         System.setProperty(WaysConstant.TYPE_BROWSER_CHROME, WaysConstant.WAY_TO_CHROME_DRIVER);
         this.browser = new ChromeDriver();
