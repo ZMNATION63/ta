@@ -1,9 +1,5 @@
 package com.google.readers;
 
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 
@@ -14,7 +10,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class XlsReader extends AbstractReader {
-    protected static List<HolderActions> actions = new LinkedList<>();
+//    protected static List<Action> actions = new LinkedList<>();
     private File dataFile;
     public String way;
 
@@ -27,35 +23,15 @@ public class XlsReader extends AbstractReader {
         return dataFile;
     }
 
-    public List<HolderActions> getActions() {
+    public List<Action> getActions() {
         return actions;
     }
 
-    public void setActions(List<HolderActions> actions) {
-        this.actions = actions;
-    }
-
-    public void setActionsAsEliments(HolderActions action) {
-        this.actions.add(action);
-    }
-
-    public void setDataFile(File dataFile) {
-        this.dataFile = dataFile;
-    }
-
-    public void printActionsArray(List<HolderActions> actions) {
-        for (HolderActions a : actions) {
-            System.out.println(a.toString());
-        }
-    }
-
-    public List<HolderActions> arrActions(String way) {
-//        HolderActions holderActions = new HolderActions();
-//        List<HolderActions> holderActions1 = null;
+    @Override
+    public void arrActions(String way) {
 
         ClassLoader classLoader = getClass().getClassLoader();
         dataFile = new File(classLoader.getResource(way).getFile());
-//        HolderActions holderActions = new HolderActions();
 
         try (FileInputStream file = new FileInputStream(dataFile)) {
             Workbook workbook = WorkbookFactory.create(file);
@@ -84,14 +60,13 @@ public class XlsReader extends AbstractReader {
                     }
                     if (i == 1) {
                         xPath = dataFormatter.formatCellValue(cell);
-                        HolderActions actionFromXls = new HolderActions(action, xPath);
-                        actions.add(actionFromXls);
+//                        Action actionFromXls = new Action(action, xPath);
+                        actions.add(new Action(action, xPath));
                     }
                     i++;
                 }
             }
-            //printArrayT(actions);
-//            holderActions1.addAll(actions);
+            printArrayT(actions);
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } catch (InvalidFormatException ex) {
@@ -99,7 +74,6 @@ public class XlsReader extends AbstractReader {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        return actions;
     }
 }
 

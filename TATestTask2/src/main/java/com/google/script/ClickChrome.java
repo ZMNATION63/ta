@@ -1,7 +1,6 @@
 package com.google.script;
 
 import com.google.WaysConstant;
-import com.google.readers.HolderActions;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,8 +13,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ClickChrome extends ScriptManager {
-    public ChromeDriver browser;
-    public String wayForScreenshots;
+    private ChromeDriver browser;
+    private final String wayForScreenshots;
+
+    public ClickChrome() {
+        Date date1 = new Date();
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd-MM-yy_hh-mm-ss");
+        String datetimeFolder = formatForDateNow.format(date1);
+        wayForScreenshots = WaysConstant.WAY_TO_SCREENSHOT + "\\TESTRUN-" + datetimeFolder + "\\";
+
+    }
 
     //      кликает на первое вхождение
     //открывает браузер - тест пройден
@@ -66,7 +73,6 @@ public class ClickChrome extends ScriptManager {
             WebElement elementButton = (new WebDriverWait(browser, WaysConstant.TIME_OUT_IN_SEOND))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(tmpStr[0])));
             elementButton.submit();
-//            clickByXPath(xPath);
         } else {
             System.out.println("Не могу выполнить задиние!!! Прверь метод" + getClass().getName());
         }
@@ -78,16 +84,12 @@ public class ClickChrome extends ScriptManager {
         File scrFile = ((TakesScreenshot) browser).getScreenshotAs(OutputType.FILE);
 
         try {
-            Date date1 = new Date();
-            SimpleDateFormat formatForDateNow = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
-            String datetime = formatForDateNow.format(date1);
-            wayForScreenshots = path + "\\" + datetime + "\\";
-            File file = new File(path);
+            File file = new File(wayForScreenshots);
             file.mkdir();
             Date dateForFileName = new Date();
             SimpleDateFormat formatForFileName = new SimpleDateFormat("hh-mm-ss");
 
-            String screen = wayForScreenshots + "screen" + formatForFileName.format(dateForFileName) + ".png";
+            String screen = wayForScreenshots + "screen-" + formatForFileName.format(dateForFileName) + ".png";
             FileUtils.copyFile(scrFile, new File(screen));
         } catch (IOException e) {
             e.printStackTrace();
