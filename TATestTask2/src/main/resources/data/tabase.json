@@ -16,6 +16,11 @@
 		"Description": "Take screenshot"
 	},
 	{
+		"Action": "Screenshot",
+		"Params": " ",
+		"Description": "Take screenshot"
+	},
+	{
 		"Action": "setValue",
 		"Params": "//input[@class=\"gLFyf gsfi\"] | Netcracker",
 		"Description": "Set Text Value"

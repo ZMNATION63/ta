@@ -1,45 +1,42 @@
 package com.google.script;
 
-import com.google.WaysConstant;
-<<<<<<< HEAD
+import com.google.PathConstant;
+
 import com.google.readers.Action;
-import com.google.readers.JsonReader;
-import com.google.readers.XlsReader;
+import com.google.readers.JsonReaderTa;
+import com.google.readers.XlsReaderTa;
 
 import java.util.List;
-=======
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
 
 public class ScriptManager {
 
-    public void runXlsTest(){
-        XlsReader xlsReader = new XlsReader();
-        xlsReader.arrActions(WaysConstant.WAY_TO_DATA_XLS);
+    public void runXlsTest(String path) {
+        XlsReaderTa xlsReader = new XlsReaderTa();
+        xlsReader.arrActions(path);
 
-//        JsonReader jsonReader = new JsonReader();
-//        jsonReader.arrActions(WaysConstant.WAY_TO_DATA_JSON);
         ClickChrome clickerChrome = new ClickChrome();
         List<Action> action = xlsReader.getActions();
         ScriptManager scriptManager = new ScriptManager();
         for (int i = 0; i < action.size(); i++) {
-            scriptManager.scriptSwitch(action.get(i).action,action.get(i).xPath, clickerChrome);
+            scriptManager.scriptSwitch(action.get(i).action, action.get(i).xPath, clickerChrome);
         }
         clickerChrome.closeChromeBrowser();
     }
 
-    public void runJson(){
-        JsonReader jsonReader = new JsonReader();
-        jsonReader.arrActions(WaysConstant.WAY_TO_DATA_JSON);
+    public void runJson(String path) {
+        JsonReaderTa jsonReader = new JsonReaderTa();
+        jsonReader.arrActions(path);
         ClickChrome clickerChrome = new ClickChrome();
         List<Action> action = jsonReader.getActions();
         ScriptManager scriptManager = new ScriptManager();
         for (int i = 0; i < action.size(); i++) {
-            scriptManager.scriptSwitch(action.get(i).action,action.get(i).xPath, clickerChrome);
+            scriptManager.scriptSwitch(action.get(i).action, action.get(i).xPath, clickerChrome);
         }
         clickerChrome.closeChromeBrowser();
     }
 
     public void scriptSwitch(String action, String xPath, ClickChrome clickChrome) {
+
         /*
          * 1. openUrl
          * 2. click
@@ -58,8 +55,10 @@ public class ScriptManager {
                 clickChrome.setValue(xPath);
                 break;
             case "Screenshot":
-                clickChrome.takeScreenshot(WaysConstant.WAY_TO_SCREENSHOT);
+                clickChrome.takeScreenshot(PathConstant.PATH_TO_SCREENSHOT);
                 break;
+            case "checkElementVisible":
+                clickChrome.checkElementVisible(xPath);
         }
     }
 }

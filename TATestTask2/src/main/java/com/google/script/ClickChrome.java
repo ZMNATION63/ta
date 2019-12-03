@@ -1,6 +1,6 @@
 package com.google.script;
 
-import com.google.WaysConstant;
+import com.google.PathConstant;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,24 +15,19 @@ import java.util.Date;
 public class ClickChrome extends ScriptManager {
     private ChromeDriver browser;
     private final String wayForScreenshots;
+    private static int numberOsScreenshots = 0;
 
     public ClickChrome() {
         Date date1 = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd-MM-yy_hh-mm-ss");
         String datetimeFolder = formatForDateNow.format(date1);
-        wayForScreenshots = WaysConstant.WAY_TO_SCREENSHOT + "\\TESTRUN-" + datetimeFolder + "\\";
-
+        wayForScreenshots = PathConstant.PATH_TO_SCREENSHOT + "\\TESTRUN-" + datetimeFolder + "\\";
     }
 
-    //      кликает на первое вхождение
+    //кликает на первое вхождение
     //открывает браузер - тест пройден
-
-    /**
-     *
-     */
-
     public void setBrowser() {
-        System.setProperty(WaysConstant.TYPE_BROWSER_CHROME, WaysConstant.WAY_TO_CHROME_DRIVER);
+        System.setProperty(PathConstant.TYPE_BROWSER_CHROME, PathConstant.PATH_TO_CHROME_DRIVER);
         this.browser = new ChromeDriver();
     }
 
@@ -72,10 +67,10 @@ public class ClickChrome extends ScriptManager {
         String[] tmpStr = madeRequestText(xPath, " \\| ", 2);
         if (checkElementVisible(tmpStr[0]) == true) {
             //      забивает запрос в поисковую строку
-            WebElement element = (new WebDriverWait(browser, WaysConstant.TIME_OUT_IN_SEOND))
+            WebElement element = (new WebDriverWait(browser, PathConstant.TIME_OUT_IN_SEOND))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(tmpStr[0])));
             element.sendKeys(tmpStr[1]);
-            WebElement elementButton = (new WebDriverWait(browser, WaysConstant.TIME_OUT_IN_SEOND))
+            WebElement elementButton = (new WebDriverWait(browser, PathConstant.TIME_OUT_IN_SEOND))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(tmpStr[0])));
             elementButton.submit();
         } else {
@@ -94,8 +89,11 @@ public class ClickChrome extends ScriptManager {
             Date dateForFileName = new Date();
             SimpleDateFormat formatForFileName = new SimpleDateFormat("hh-mm-ss");
 
-            String screen = wayForScreenshots + "screen-" + formatForFileName.format(dateForFileName) + ".png";
+            String screen = wayForScreenshots + "screen-" + numberOsScreenshots +"-"
+                            + formatForFileName.format(dateForFileName) + ".png";
+
             FileUtils.copyFile(scrFile, new File(screen));
+            numberOsScreenshots++;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -105,8 +103,11 @@ public class ClickChrome extends ScriptManager {
         boolean present;
         try {
             browser.findElement(By.xpath(xPath)).isDisplayed();
+            System.out.println("Элеиент " + xPath + " виден.");
             present = true;
         } catch (NoSuchElementException e) {
+            System.err.println("Элемент " + xPath + " не найден!");
+            System.out.println(e.fillInStackTrace());
             present = false;
         }
         return present;

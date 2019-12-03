@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87256f21-c998-4b21-b823-2bc30e601f6b" name="Default Changelist" comment="">
+    <list default="true" id="37e08b9c-2f0d-4494-97e1-901e3ad2994d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/google/PathConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/WaysConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/WaysConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/AbstractReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/AbstractReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/HolderActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/XlsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/XlsReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/WaysConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/AbstractReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/ReaderTa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/JsonReaderTa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/readers/XlsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/readers/XlsReaderTa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/script/ClickChrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/script/ClickChrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/google/script/ScriptManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/google/script/ScriptManager.java" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/dataFile.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/dataFile.xls" afterDir="false" />
-=======
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/tabase.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/tabase.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/TaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TATestTask2.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/TATestTask2.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/google/WaysConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/WaysConstant.class" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/AbstractReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/AbstractReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/HolderActions.class" beforeDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/HolderActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/HolderActions.class" afterDir="false" />
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
-      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/JsonReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/JsonReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/XlsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/XlsReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/WaysConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/AbstractReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/readers/Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/JsonReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/readers/XlsReader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/google/script/ClickChrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/script/ClickChrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/google/script/ScriptManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/google/script/ScriptManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/data/dataFile.xls" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/dataFile.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/data/tabase.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/tabase.json" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/target/classes/screenshot/2019-11-29-05-18-15/screen05-18-15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/screenshot/2019-11-29-05-18-21/screen05-18-21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/screenshot/2019-11-29-05-30-13/screen05-30-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/screenshot/2019-11-29-05-30-21/screen05-30-21.png" beforeDir="false" />
-=======
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
+      <change beforePath="$PROJECT_DIR$/target/screenshot/TESTRUN-30-11-19_10-14-09/screen-10-14-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshot/TESTRUN-30-11-19_10-14-09/screen-10-14-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshot/TESTRUN-30-11-19_10-15-17/screen-10-15-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshot/TESTRUN-30-11-19_10-15-17/screen-10-15-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshot/TESTRUN-30-11-19_10-16-53/screen-10-16-57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/screenshot/TESTRUN-30-11-19_10-16-53/screen-10-17-00.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/Google/TaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/Google/TaTest.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +68,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_231/docs/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -86,9 +82,6 @@
       <recent name="C:\Users\user\Projects\tatest\TATestTask2\src\main\resources\data" />
     </key>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="JUnit.TaTest.RunUiTest_UsingJsonTest_TestPassedSuccessfully">
-=======
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -101,27 +94,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TaTest.testFileCreation">
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
+  <component name="RunManager">
     <configuration name="All in TATestTask2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TATestTask2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TATestTask2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.google" />
-      <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,7 +126,7 @@
       <module name="TATestTask2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.google.script.*" />
+          <option name="PATTERN" value="com.google.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,18 +137,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TATestTask2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.google.*" />
+          <option name="PATTERN" value="com.google.script.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.google" />
       <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
-      <option name="METHOD_NAME" value="RunUiTest_UsingExcelTest_TestPassedSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,6 +171,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TATestTask2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.google" />
+      <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
+      <option name="METHOD_NAME" value="RunUiTest_UsingExcelTest_TestPassedSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaTest.RunUiTest_UsingTest_TestPassedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TATestTask2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.google" />
+      <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
+      <option name="METHOD_NAME" value="RunUiTest_UsingTest_TestPassedSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaTest.testFileCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TATestTask2" />
       <extension name="coverage">
@@ -211,59 +219,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaTest.RunUiTest_UsingJsonTest_TestPassedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TATestTask2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.google" />
-      <option name="MAIN_CLASS_NAME" value="com.google.TaTest" />
-      <option name="METHOD_NAME" value="RunUiTest_UsingJsonTest_TestPassedSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-        <item itemvalue="JUnit.TaTest.RunUiTest_UsingJsonTest_TestPassedSuccessfully" />
+        <item itemvalue="JUnit.TaTest.RunUiTest_UsingTest_TestPassedSuccessfully" />
         <item itemvalue="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully" />
-        <item itemvalue="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully (1)" />
-=======
         <item itemvalue="JUnit.TaTest.testFileCreation" />
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
-        <item itemvalue="JUnit.TaTest (1)" />
-        <item itemvalue="JUnit.TaTest.RunUiTest_UsingExcelTest_TestPassedSuccessfully (1)" />
-        <item itemvalue="JUnit.All in TATestTask2" />
-<<<<<<< HEAD
-=======
-        <item itemvalue="JUnit.TaTest" />
->>>>>>> aecd657d6bdc7a5674f0ddd6932c3438562d8d0e
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="87256f21-c998-4b21-b823-2bc30e601f6b" name="Default Changelist" comment="" />
+      <changelist id="37e08b9c-2f0d-4494-97e1-901e3ad2994d" name="Default Changelist" comment="" />
       <created>1574273708178</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -297,37 +266,43 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="525" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1575140218474" />
-    <state x="275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575137432850">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="261" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575226934875">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="261" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1575226934875" />
     <state x="275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.860@0.0.1440.860" timestamp="1575137432850" />
     <state x="101" y="242" key="FileChooserDialogImpl" timestamp="1575140438951">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="101" y="242" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1575140438951" />
-    <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1575141433890">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1575227237345">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575227237345" />
     <state width="1397" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1575141433890" />
-    <state width="1397" height="222" key="GridCell.Tab.0.center" timestamp="1575141433890">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1575227237345">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575227237345" />
     <state width="1397" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1575141433890" />
-    <state width="1397" height="222" key="GridCell.Tab.0.left" timestamp="1575141433890">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1575227237345">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575227237345" />
     <state width="1397" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1575141433890" />
-    <state width="1397" height="222" key="GridCell.Tab.0.right" timestamp="1575141433890">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1575227237345">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575227237345" />
     <state width="1397" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1575141433890" />
     <state x="226" y="0" key="SettingsEditor" timestamp="1575140450892">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="226" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1575140450892" />
-    <state x="427" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1575134958457">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="405" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1575204534960">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="405" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575204534960" />
     <state x="427" y="257" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1575134958457" />
     <state x="377" y="47" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575140211701">
       <screen x="0" y="0" width="1440" height="860" />
