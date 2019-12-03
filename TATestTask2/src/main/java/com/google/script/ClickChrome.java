@@ -21,7 +21,7 @@ public class ClickChrome extends ScriptManager {
         Date date1 = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd-MM-yy_hh-mm-ss");
         String datetimeFolder = formatForDateNow.format(date1);
-        wayForScreenshots = PathConstant.PATH_TO_SCREENSHOT + "\\TESTRUN-" + datetimeFolder + "\\";
+        wayForScreenshots = PathConstant.PATH_TO_SCREENSHOT + "/TESTRUN-" + datetimeFolder + "/";
     }
 
     //кликает на первое вхождение
